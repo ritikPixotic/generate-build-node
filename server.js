@@ -69,6 +69,10 @@ app.get('/download-apk', async(req, res) => {
 });
 
 
+app.get('/test',(req,res)=>{
+    res.status(200).send('Test working fine.');
+})
+
 app.get('/clean',(req, res) => {
     console.log('innn clean');
     const androidPath = path.join( '/Users/apple/Projects/demo/AwesomeProject/android');
